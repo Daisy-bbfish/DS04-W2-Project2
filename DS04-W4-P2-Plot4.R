@@ -14,7 +14,7 @@ coalCombustion <- (combustionRelated & coalRelated)
 combustionSCC <- SCC[coalCombustion,]$SCC
 combustionNEI <- NEI[NEI$SCC %in% combustionSCC,]
 
-png("DS04-W4-plot4.png",width=480,height=480)
+png("plot4.png",width=480,height=480)
 
 library(ggplot2)
 

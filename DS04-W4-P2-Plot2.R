@@ -14,7 +14,7 @@ baltimoreNEI <- NEI[NEI$fips=="24510",]
 # Aggregate using sum the Baltimore emissions data by year
 aggTotalsBaltimore <- aggregate(Emissions ~ year, baltimoreNEI,sum)
 
-png("DS04-W4-plot2.png",width=480,height=480,units="px")
+png("plot2.png",width=480,height=480,units="px")
 
 barplot(
   aggTotalsBaltimore$Emissions,

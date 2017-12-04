@@ -12,7 +12,7 @@ SCC <- readRDS("Source_Classification_Code.rds")
 # Aggregate by sum the total emissions by year
 aggTotals <- aggregate(Emissions ~ year,NEI, sum)
 
-png("DS04-W4-plot1.png",width=480,height=480,units="px")
+png("plot1.png",width=480,height=480,units="px")
 
 barplot(
   (aggTotals$Emissions)/10^6,

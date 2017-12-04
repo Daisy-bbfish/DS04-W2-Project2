@@ -15,7 +15,7 @@ vehiclesNEI <- NEI[NEI$SCC %in% vehiclesSCC,]
 # Subset the vehicles NEI data to Baltimore's fip
 baltimoreVehiclesNEI <- vehiclesNEI[vehiclesNEI$fips=="24510",]
 
-png("DS04-W4-plot5.png",width=480,height=480,units="px")
+png("plot5.png",width=480,height=480,units="px")
 
 library(ggplot2)
 
