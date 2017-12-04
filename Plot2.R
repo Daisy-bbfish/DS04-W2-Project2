@@ -16,12 +16,6 @@ aggTotalsBaltimore <- aggregate(Emissions ~ year, baltimoreNEI,sum)
 
 png("plot2.png",width=480,height=480,units="px")
 
-barplot(
-  aggTotalsBaltimore$Emissions,
-  names.arg=aggTotalsBaltimore$year,
-  xlab="Year",
-  ylab="PM2.5 Emissions (Tons)",
-  main="Total PM2.5 Emissions From all Baltimore City Sources"
-)
+plot(aggTotalsBaltimore, type = "o", main = "Total PM2.5 Emissions in Baltimore County", xlab = "Year", ylab = "PM2.5 Emissions", pch = 18, col = "darkgreen", lty = 5)
 
 dev.off()
